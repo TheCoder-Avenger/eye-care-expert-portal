@@ -124,8 +124,10 @@ function HomePage() {
         />
       </div>
       <div className={styles["container"]}>
-        {products.map((item) => (
-          <ProductCard item={item} />
+        {products.map((item, key) => (
+          <div key={key}>
+            <ProductCard item={item} />
+          </div>
         ))}
       </div>
     </>

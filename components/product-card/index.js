@@ -21,6 +21,10 @@ function ProductCard({ item }) {
     final_price,
   } = item;
 
+  const onBuyNowClick = () => {
+    window.open("https://wa.me/919653181580?text=test.", "_blank");
+  };
+
   return (
     <div className={style["wrapper"]}>
       <span className={style["bestseller-tag"]}>BestSeller</span>
@@ -39,7 +43,9 @@ function ProductCard({ item }) {
             <div className={style["final-price"]}>₹{final_price}</div>
           </div>
           <div>
-            <div className={style["buy-now-btn"]}>Buy Now</div>
+            <div className={style["buy-now-btn"]} onClick={onBuyNowClick}>
+              Buy Now
+            </div>
           </div>
         </div>
       </div>
