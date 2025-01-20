@@ -40,3 +40,7 @@
   display: flex !important;
   transition: 0.9s ease-in-out;
 }
+
+.container {
+  padding: 16px;
+}

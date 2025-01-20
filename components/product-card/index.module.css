@@ -1,0 +1,75 @@
+.wrapper {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 2px 0px;
+  margin-bottom: 10px;
+}
+
+.image {
+  width: 100%;
+  padding: 16px;
+}
+
+.title {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+}
+
+.brand-name {
+  font-size: 12px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 26px;
+  color: #555;
+}
+
+.original-price-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #777;
+  font-size: 14px;
+}
+
+.discount-percentage {
+  color: green;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.final-price {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.desc-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.buy-now-btn {
+  background-color: green;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 4px;
+}
+
+.bestseller-tag {
+  position: absolute;
+  background-color: purple;
+  color: white;
+  padding: 0 8px;
+  font-size: 10px;
+  margin: 16px;
+}
+
+.info-wrapper {
+  background-color: whitesmoke;
+  padding: 16px;
+}
