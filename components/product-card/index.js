@@ -23,7 +23,10 @@ function ProductCard({ item }) {
   } = item;
 
   const onBuyNowClick = () => {
-    window.open("https://wa.me/919653181580?text=test.", "_blank");
+    window.open(
+      `https://wa.me/919653181580?text=${`i want to buy ${name} which has final price after discount ₹${final_price}`} /-`,
+      "_blank"
+    );
   };
 
   const renderImages = () => {

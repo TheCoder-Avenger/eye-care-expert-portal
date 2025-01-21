@@ -41,9 +41,22 @@
 
 .drawer-open {
   display: flex !important;
+  flex-direction: column;
   transition: 0.9s ease-in-out;
 }
 
 .container {
   padding: 70px 16px 16px 16px;
+}
+
+.contact-us {
+  margin-bottom: 50px;
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+  text-decoration: underline;
+}
+
+.comming-soon {
+  text-align: center;
+  margin-top: 50px;
 }
