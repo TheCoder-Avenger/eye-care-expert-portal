@@ -104,7 +104,7 @@ function HomePage() {
   return (
     <>
       <div className={styles["header"]}>
-        <img src="/images/logo.jpeg" className={styles["logo"]} />
+        <img src="./images/logo.jpeg" className={styles["logo"]} />
         <TabIcon
           icon="menu-2"
           color={"#FFF"}

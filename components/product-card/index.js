@@ -28,7 +28,7 @@ function ProductCard({ item }) {
   return (
     <div className={style["wrapper"]}>
       <span className={style["bestseller-tag"]}>BestSeller</span>
-      <img src="/images/demo.png" className={style["image"]} />
+      <img src="./images/demo.png" className={style["image"]} />
       <div className={style["info-wrapper"]}>
         <div className={style["title"]}>{name}</div>
         <div className={style["brand-name"]}>({brand_name})</div>
