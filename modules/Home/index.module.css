@@ -107,7 +107,7 @@
   height: 100%;
   width: 100%;
   position: fixed;
-  z-index: 999;
+  /* z-index: 999; */
   display: none;
 }
 
@@ -117,4 +117,8 @@
 
 .filter-section-open {
   display: block;
+}
+
+.product-type {
+  color: white;
 }

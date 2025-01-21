@@ -3,6 +3,7 @@
  */
 import React, { useState } from "react";
 import classNames from "classnames";
+import Switch from "react-switch";
 
 /**
  * Internal dependencies
@@ -19,12 +20,25 @@ import styles from "./index.module.css";
 function HomePage() {
   const [visible, setVisible] = useState(false);
   const [showFilter, setShowFilter] = useState(false);
-  console.log("showFilter", showFilter);
+  const [checked, setChecked] = useState(false);
+
+  const handleChange = (checked) => {
+    setChecked(checked);
+  };
 
   return (
     <>
       <div className={styles["header"]}>
         <img src="./images/logo.jpeg" className={styles["logo"]} />
+        {/* <div>
+          <Switch
+            onChange={handleChange}
+            checked={checked}
+            uncheckedIcon={false}
+            checkedIcon={false}
+          />
+          <div className={styles["product-type"]}>(Sunglasses)</div>
+        </div> */}
         <TabIcon
           icon="menu-2"
           color={"#FFF"}
