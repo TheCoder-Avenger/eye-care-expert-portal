@@ -2,7 +2,6 @@
  * External dependencies
  */
 import React from "react";
-import HorizontalScroll from "react-scroll-horizontal";
 
 /**
  * Internal dependencies
@@ -27,19 +26,16 @@ function ProductCard({ item }) {
     window.open("https://wa.me/919653181580?text=test.", "_blank");
   };
 
+  const renderImages = () => {
+    return images.map((ele, key) => (
+      <img key={key} src={ele} className={style["image"]} />
+    ));
+  };
+
   return (
     <div className={style["wrapper"]}>
       <span className={style["bestseller-tag"]}>BestSeller</span>
-      <React.StrictMode>
-        <HorizontalScroll>
-          <div>Content 1</div>
-          <div>Content 2</div>
-          <div>Content 3</div>
-          {/* {images.map((ele) => (
-          <img src={ele} className={style["image"]} />
-        ))} */}
-        </HorizontalScroll>
-      </React.StrictMode>
+      <div className={style["images-wrapper"]}>{renderImages()}</div>
       <div className={style["info-wrapper"]}>
         <div className={style["title"]}>{name}</div>
         <div className={style["brand-name"]}>({brand_name})</div>

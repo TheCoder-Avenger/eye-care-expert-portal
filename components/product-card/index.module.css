@@ -8,6 +8,7 @@
 .image {
   width: 100%;
   padding: 16px;
+  border-right: 1px solid #ddd;
 }
 
 .title {
@@ -84,4 +85,9 @@
 
 .without-lenses-text {
   font-size: 10px;
+}
+
+.images-wrapper {
+  display: flex;
+  overflow-x: auto;
 }
