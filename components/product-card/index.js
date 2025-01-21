@@ -2,6 +2,7 @@
  * External dependencies
  */
 import React from "react";
+import HorizontalScroll from "react-scroll-horizontal";
 
 /**
  * Internal dependencies
@@ -19,6 +20,7 @@ function ProductCard({ item }) {
     original_price,
     discounted_percentage,
     final_price,
+    images,
   } = item;
 
   const onBuyNowClick = () => {
@@ -28,7 +30,16 @@ function ProductCard({ item }) {
   return (
     <div className={style["wrapper"]}>
       <span className={style["bestseller-tag"]}>BestSeller</span>
-      <img src="./images/demo.png" className={style["image"]} />
+      <React.StrictMode>
+        <HorizontalScroll>
+          <div>Content 1</div>
+          <div>Content 2</div>
+          <div>Content 3</div>
+          {/* {images.map((ele) => (
+          <img src={ele} className={style["image"]} />
+        ))} */}
+        </HorizontalScroll>
+      </React.StrictMode>
       <div className={style["info-wrapper"]}>
         <div className={style["title"]}>{name}</div>
         <div className={style["brand-name"]}>({brand_name})</div>
@@ -40,7 +51,12 @@ function ProductCard({ item }) {
                 ({discounted_percentage}% OFF)
               </div>
             </div>
-            <div className={style["final-price"]}>₹{final_price}</div>
+            <div className={style["final-price-wrpper"]}>
+              <div className={style["final-price"]}>₹{final_price}</div>
+              <div className={style["without-lenses-text"]}>
+                (without lenses)
+              </div>
+            </div>
           </div>
           <div>
             <div className={style["buy-now-btn"]} onClick={onBuyNowClick}>

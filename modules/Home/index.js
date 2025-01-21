@@ -26,6 +26,7 @@ function HomePage() {
       original_price: 2000,
       discounted_percentage: 60,
       final_price: 800,
+      images: ["./images/demo.png", "./images/demo.png", "./images/demo.png"],
     },
     {
       id: 2,
@@ -34,6 +35,7 @@ function HomePage() {
       original_price: 2000,
       discounted_percentage: 60,
       final_price: 800,
+      images: ["./images/demo.png", "./images/demo.png", "./images/demo.png"],
     },
     {
       id: 3,
@@ -42,6 +44,7 @@ function HomePage() {
       original_price: 2000,
       discounted_percentage: 60,
       final_price: 800,
+      images: ["./images/demo.png", "./images/demo.png", "./images/demo.png"],
     },
     {
       id: 4,
@@ -50,6 +53,7 @@ function HomePage() {
       original_price: 2000,
       discounted_percentage: 60,
       final_price: 800,
+      images: ["./images/demo.png", "./images/demo.png", "./images/demo.png"],
     },
     {
       id: 5,
@@ -58,6 +62,7 @@ function HomePage() {
       original_price: 2000,
       discounted_percentage: 60,
       final_price: 800,
+      images: ["./images/demo.png", "./images/demo.png", "./images/demo.png"],
     },
     {
       id: 6,
@@ -66,6 +71,7 @@ function HomePage() {
       original_price: 2000,
       discounted_percentage: 60,
       final_price: 800,
+      images: ["./images/demo.png", "./images/demo.png", "./images/demo.png"],
     },
     {
       id: 7,
@@ -74,6 +80,7 @@ function HomePage() {
       original_price: 2000,
       discounted_percentage: 60,
       final_price: 800,
+      images: ["./images/demo.png", "./images/demo.png", "./images/demo.png"],
     },
     {
       id: 8,
@@ -82,6 +89,7 @@ function HomePage() {
       original_price: 2000,
       discounted_percentage: 60,
       final_price: 800,
+      images: ["./images/demo.png", "./images/demo.png", "./images/demo.png"],
     },
     {
       id: 9,
@@ -90,6 +98,7 @@ function HomePage() {
       original_price: 2000,
       discounted_percentage: 60,
       final_price: 800,
+      images: ["./images/demo.png", "./images/demo.png", "./images/demo.png"],
     },
     {
       id: 10,
@@ -98,6 +107,7 @@ function HomePage() {
       original_price: 2000,
       discounted_percentage: 60,
       final_price: 800,
+      images: ["./images/demo.png", "./images/demo.png", "./images/demo.png"],
     },
   ];
 

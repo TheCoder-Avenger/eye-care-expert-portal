@@ -2,7 +2,7 @@
   border: 1px solid #ddd;
   border-radius: 10px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 2px 0px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .image {
@@ -58,6 +58,7 @@
   color: white;
   padding: 10px 30px;
   border-radius: 4px;
+  font-size: 12px;
 }
 
 .bestseller-tag {
@@ -72,4 +73,15 @@
 .info-wrapper {
   background-color: whitesmoke;
   padding: 16px;
+}
+
+.final-price-wrpper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+
+.without-lenses-text {
+  font-size: 10px;
 }
