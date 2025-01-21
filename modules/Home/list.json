@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "type": "eyeglass",
+    "name": "Vicent Change Online",
+    "brand_name": "Eye Care Expert",
+    "original_price": 2000,
+    "discounted_percentage": 60,
+    "final_price": 800,
+    "images": ["./images/demo.png", "./images/demo.png", "./images/demo.png"]
+  },
+  {
+    "id": 2,
+    "type": "eyeglass",
+    "name": "Vicent Change Online",
+    "brand_name": "Eye Care Expert",
+    "original_price": 2000,
+    "discounted_percentage": 60,
+    "final_price": 800,
+    "images": ["./images/demo.png", "./images/demo.png", "./images/demo.png"]
+  },
+  {
+    "id": 3,
+    "type": "eyeglass",
+    "name": "Vicent Change Online",
+    "brand_name": "Eye Care Expert",
+    "original_price": 2000,
+    "discounted_percentage": 60,
+    "final_price": 800,
+    "images": ["./images/demo.png", "./images/demo.png", "./images/demo.png"]
+  },
+  {
+    "id": 4,
+    "type": "eyeglass",
+    "name": "Vicent Change Online",
+    "brand_name": "Eye Care Expert",
+    "original_price": 2000,
+    "discounted_percentage": 60,
+    "final_price": 800,
+    "images": ["./images/demo.png", "./images/demo.png", "./images/demo.png"]
+  },
+  {
+    "id": 5,
+    "type": "sunglass",
+    "name": "Vicent Change Online",
+    "brand_name": "Eye Care Expert",
+    "original_price": 2000,
+    "discounted_percentage": 60,
+    "final_price": 800,
+    "images": ["./images/demo.png", "./images/demo.png", "./images/demo.png"]
+  },
+  {
+    "id": 6,
+    "type": "sunglass",
+    "name": "Vicent Change Online",
+    "brand_name": "Eye Care Expert",
+    "original_price": 2000,
+    "discounted_percentage": 60,
+    "final_price": 800,
+    "images": ["./images/demo.png", "./images/demo.png", "./images/demo.png"]
+  },
+  {
+    "id": 7,
+    "type": "sunglass",
+    "name": "Vicent Change Online",
+    "brand_name": "Eye Care Expert",
+    "original_price": 2000,
+    "discounted_percentage": 60,
+    "final_price": 800,
+    "images": ["./images/demo.png", "./images/demo.png", "./images/demo.png"]
+  },
+  {
+    "id": 8,
+    "type": "sunglass",
+    "name": "Vicent Change Online",
+    "brand_name": "Eye Care Expert",
+    "original_price": 2000,
+    "discounted_percentage": 60,
+    "final_price": 800,
+    "images": ["./images/demo.png", "./images/demo.png", "./images/demo.png"]
+  },
+  {
+    "id": 9,
+    "type": "sunglass",
+    "name": "Vicent Change Online",
+    "brand_name": "Eye Care Expert",
+    "original_price": 2000,
+    "discounted_percentage": 60,
+    "final_price": 800,
+    "images": ["./images/demo.png", "./images/demo.png", "./images/demo.png"]
+  },
+  {
+    "id": 10,
+    "type": "sunglass",
+    "name": "Vicent Change Online",
+    "brand_name": "Eye Care Expert",
+    "original_price": 2000,
+    "discounted_percentage": 60,
+    "final_price": 800,
+    "images": ["./images/demo.png", "./images/demo.png", "./images/demo.png"]
+  }
+]
