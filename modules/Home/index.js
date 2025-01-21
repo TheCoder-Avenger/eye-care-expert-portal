@@ -52,6 +52,19 @@ function HomePage() {
           onClick={() => setVisible(false)}
         />
       </div>
+      <div className={styles["filter-sort-wrapper"]}>
+        <div className={styles["filter-sort-sub-wrapper"]}>
+          <div className={styles["sort-wrapper"]}>
+            <TabIcon icon="arrows-sort" />
+            <div>SORT</div>
+          </div>
+          <div className={styles["filter-divider"]}></div>
+          <div className={styles["filter-wrapper"]}>
+            <TabIcon icon="adjustments-horizontal" />
+            <div>FILTER</div>
+          </div>
+        </div>
+      </div>
       <div className={styles["container"]}>
         {products.map((item, key) => (
           <div key={key}>
