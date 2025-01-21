@@ -18,6 +18,8 @@ import styles from "./index.module.css";
 
 function HomePage() {
   const [visible, setVisible] = useState(false);
+  const [showFilter, setShowFilter] = useState(false);
+  console.log("showFilter", showFilter);
 
   return (
     <>
@@ -54,16 +56,35 @@ function HomePage() {
       </div>
       <div className={styles["filter-sort-wrapper"]}>
         <div className={styles["filter-sort-sub-wrapper"]}>
-          <div className={styles["sort-wrapper"]}>
+          <div
+            className={styles["sort-wrapper"]}
+            onClick={() => setShowFilter(true)}
+          >
             <TabIcon icon="arrows-sort" />
             <div>SORT</div>
           </div>
           <div className={styles["filter-divider"]}></div>
-          <div className={styles["filter-wrapper"]}>
+          <div
+            className={styles["filter-wrapper"]}
+            onClick={() => setShowFilter(true)}
+          >
             <TabIcon icon="adjustments-horizontal" />
             <div>FILTER</div>
           </div>
         </div>
+      </div>
+      <div
+        className={classNames(styles["filter-section-wrapper"], {
+          [styles["filter-section-open"]]: showFilter,
+        })}
+      >
+        <img src="./images/logo.jpeg" className={styles["image"]} />
+        <div className={styles["comming-soon"]}>Coming Soon</div>
+        <TabIcon
+          icon="x"
+          className={styles["drawer-close"]}
+          onClick={() => setShowFilter(false)}
+        />
       </div>
       <div className={styles["container"]}>
         {products.map((item, key) => (
