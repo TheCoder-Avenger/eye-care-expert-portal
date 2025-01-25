@@ -1,7 +1,8 @@
 /**
  * External dependencies
  */
-import React from "react";
+import React, { useState } from "react";
+import classNames from "classnames";
 
 /**
  * Internal dependencies
@@ -12,7 +13,7 @@ import React from "react";
  */
 import style from "./index.module.css";
 
-function ProductCard({ item }) {
+function ProductCard({ item, setOpen, setdata }) {
   const {
     name,
     brand_name,
@@ -30,6 +31,7 @@ function ProductCard({ item }) {
     general_size,
     material,
     size,
+    key,
   } = item;
 
   const displayed_product_name = `Illumina ${capitalizeFirstLetter(
@@ -43,13 +45,6 @@ function ProductCard({ item }) {
       String(val).charAt(0).toUpperCase() + String(val).slice(1).toLowerCase()
     );
   }
-
-  const onBuyNowClick = () => {
-    window.open(
-      `https://wa.me/8879046890?text=${`i want to buy ${displayed_product_name} which has final price after discount ₹${final_price}`} /-`,
-      "_blank"
-    );
-  };
 
   const renderImages = () => {
     return demo_images.map((ele, key) => (
@@ -82,7 +77,13 @@ function ProductCard({ item }) {
             </div>
           </div>
           <div>
-            <div className={style["buy-now-btn"]} onClick={onBuyNowClick}>
+            <div
+              className={style["buy-now-btn"]}
+              onClick={() => {
+                setOpen(true);
+                setdata({ ...item, displayed_product_name });
+              }}
+            >
               Buy Now
             </div>
           </div>

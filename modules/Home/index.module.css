@@ -137,3 +137,66 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 25px;
 }
+
+.bottom-sheet {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  z-index: 999;
+  height: 100%;
+  margin-top: 30%;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  left: 0;
+  display: none;
+}
+
+.bottom-open {
+  display: block;
+}
+
+.bottom-close-icon {
+  position: absolute;
+  right: 5;
+  top: 5;
+  color: #555;
+}
+
+.bottom-wrapper {
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  padding: 10px;
+  border-radius: 4;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.continue-btn {
+  background-color: green;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 4px;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: none;
+}
+
+.skip-btn {
+  background-color: #777;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 4px;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
