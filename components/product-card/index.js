@@ -19,28 +19,52 @@ function ProductCard({ item }) {
     original_price,
     discounted_percentage,
     final_price,
-    images,
+    demo_images = [
+      "./images/demo.png",
+      "./images/demo.png",
+      "./images/demo.png",
+    ],
+    bestseller,
+    shape,
+    colour,
+    general_size,
+    material,
+    size,
   } = item;
+
+  const displayed_product_name = `Illumina ${capitalizeFirstLetter(
+    shape
+  )} ${capitalizeFirstLetter(colour)} ${capitalizeFirstLetter(
+    general_size
+  )} ${capitalizeFirstLetter(material)} (${size})`;
+
+  function capitalizeFirstLetter(val) {
+    return (
+      String(val).charAt(0).toUpperCase() + String(val).slice(1).toLowerCase()
+    );
+  }
 
   const onBuyNowClick = () => {
     window.open(
-      `https://wa.me/919653181580?text=${`i want to buy ${name} which has final price after discount ₹${final_price}`} /-`,
+      `https://wa.me/8879046890?text=${`i want to buy ${displayed_product_name} which has final price after discount ₹${final_price}`} /-`,
       "_blank"
     );
   };
 
   const renderImages = () => {
-    return images.map((ele, key) => (
+    return demo_images.map((ele, key) => (
       <img key={key} src={ele} className={style["image"]} />
     ));
   };
 
   return (
     <div className={style["wrapper"]}>
-      <span className={style["bestseller-tag"]}>BestSeller</span>
+      <span className={style["bestseller-tag"]}>
+        {bestseller && "BestSeller"}
+      </span>
       <div className={style["images-wrapper"]}>{renderImages()}</div>
       <div className={style["info-wrapper"]}>
-        <div className={style["title"]}>{name}</div>
+        <div className={style["title"]}>{displayed_product_name}</div>
         <div className={style["brand-name"]}>({brand_name})</div>
         <div className={style["desc-wrapper"]}>
           <div>
