@@ -1,6 +1,6 @@
 .header {
-  background-color: black;
-  height: 60px;
+  background-color: whitesmoke;
+  height: 50px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -9,6 +9,7 @@
   position: fixed;
   width: 100%;
   z-index: 999;
+  border-bottom: 1px solid #ddd;
 }
 
 .logo {
@@ -30,6 +31,8 @@
   transition: 0.3s ease-in-out;
   padding: 16px;
   display: none;
+  border: 1px solid #ddd;
+  border-right: 0;
 }
 
 .drawer-close {
@@ -51,19 +54,20 @@
 
 .contact-us {
   margin-bottom: 50px;
-  font-size: 20px;
-  font-family: "Times New Roman", Times, serif;
+  font-size: 14px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-decoration: underline;
 }
 
 .comming-soon {
   text-align: center;
   margin-top: 50px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .filter-sort-wrapper {
   position: fixed;
-  background-color: white;
+  background-color: whitesmoke;
   width: 100%;
   bottom: 0;
   z-index: 999;
@@ -76,7 +80,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 35px;
+  padding: 10px 35px;
   z-index: 10;
   border-top: 1px solid #ddd;
 }
@@ -88,9 +92,9 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 10px;
-  font-size: 14px;
+  font-size: 12px;
   cursor: pointer;
-  color: #000;
+  color: #333;
   font-weight: 500;
 }
 
@@ -107,7 +111,7 @@
   height: 100%;
   width: 100%;
   position: fixed;
-  /* z-index: 999; */
+  z-index: 999;
   display: none;
 }
 
@@ -121,4 +125,14 @@
 
 .product-type {
   color: white;
+}
+
+.contact-person {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 25px;
 }
